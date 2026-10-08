@@ -1,0 +1,226 @@
+STANDARD OPERATING PROCEDURE
+Document Number: SOP-PUMP-001
+Title: Pump P-101 Startup, Operation and Shutdown Procedure
+Revision: 2.1
+Effective Date: February 2024
+Department: Operations
+Location: North Processing Facility
+
+================================================================================
+SOP: PUMP P-101 STARTUP, OPERATION AND SHUTDOWN
+================================================================================
+
+1. PURPOSE AND SCOPE
+---------------------
+This Standard Operating Procedure (SOP) provides instructions for the safe 
+startup, normal operation, and shutdown of Pump P-101 and associated equipment 
+including Motor M-201, Valve V-301, and monitoring instruments.
+
+This SOP applies to all operators and technicians responsible for operating 
+Pump P-101 at the North Processing Facility.
+
+2. SAFETY REQUIREMENTS
+------------------------
+HAZARD IDENTIFICATION:
+- Rotating machinery: Pump P-101 and Motor M-201 have rotating parts
+- High temperature fluid: Process fluid temperature up to 85 degrees C
+- High pressure: Operating pressure up to 6.5 bar
+- Electrical hazard: Motor M-201 operates at 415V, 3-phase
+
+PPE REQUIREMENTS:
+Before approaching Pump P-101 or Motor M-201:
+- Wear safety helmet
+- Wear safety goggles
+- Wear heat-resistant gloves when handling hot surfaces
+- Wear safety boots
+- Wear hearing protection (area noise > 85 dB)
+
+LOCKOUT/TAGOUT:
+The Lockout Tagout (LOTO) procedure SOP-LOTO-001 must be followed before any 
+maintenance work on Pump P-101, Motor M-201, or Valve V-301.
+
+3. PRE-STARTUP CHECKS
+-----------------------
+Before starting Pump P-101, the operator must complete the following checks:
+
+3.1 Visual Inspection of Pump P-101:
+  a) Check that all access panels and guards are in place
+  b) Check for any signs of fluid leakage around the mechanical seal
+  c) Check that coupling guard between Motor M-201 and Pump P-101 is installed
+  d) Check pump P-101 foundation bolts are tight
+  e) Check bearing housing oil/grease level is adequate
+  f) Check bearing B-401 condition (no unusual noise)
+
+3.2 Instrument Checks:
+  a) Verify Temperature Sensor T-501 is reading ambient temperature (no fault)
+  b) Verify Vibration Sensor VS-701 shows zero reading (pump stopped)
+  c) Check suction and discharge pressure gauges PG-601 are functioning
+  d) Verify all alarm setpoints in DCS are set correctly:
+     - Temperature High Alarm (T-501): 80 degrees C
+     - Vibration High Alarm (VS-701): 7.1 mm/s
+  
+3.3 Electrical Checks for Motor M-201:
+  a) Verify Motor M-201 power supply is available
+  b) Check motor overload protection is set to 85 A
+  c) Verify motor thermal protection is enabled
+  d) Check motor is not in lockout tagout
+
+3.4 Valve Position Verification:
+  a) Ensure Valve V-301 (discharge control valve) is CLOSED
+  b) Ensure suction isolation valve is OPEN
+  c) Ensure all drain valves are CLOSED
+  d) Ensure vent valves are CLOSED after priming
+
+3.5 Priming Pump P-101:
+  a) Open suction isolation valve fully
+  b) Slowly open vent valve on pump casing
+  c) Wait until fluid flows from vent (no air present)
+  d) Close vent valve
+
+4. STARTUP PROCEDURE FOR PUMP P-101
+--------------------------------------
+STEP 1: Confirm all pre-startup checks are complete.
+
+STEP 2: Notify the Control Room that Pump P-101 startup is in progress.
+
+STEP 3: Start Motor M-201:
+  a) Ensure Valve V-301 is in closed position (0%)
+  b) Start Motor M-201 from local control panel or DCS
+  c) Motor M-201 starting current is approximately 500 A (6 times FLC)
+  d) Starting current should reduce to normal within 5 seconds
+  e) Verify Motor M-201 speed reaches 1450 RPM
+
+STEP 4: Monitor Pump P-101 during startup:
+  a) Listen for unusual noises from pump bearings
+  b) Check vibration sensor VS-701 reading is below 4.5 mm/s
+  c) Check temperature sensor T-501 reading - should be near ambient initially
+
+STEP 5: Slowly open Valve V-301 to establish flow:
+  a) Gradually open V-301 from 0% to 25% over 30 seconds
+  b) Check discharge pressure should rise to 5.0 to 6.5 bar
+  c) Continue opening V-301 to required flow rate
+  d) Target flow rate: 100 to 130 m3/h
+  e) Monitor suction pressure - should remain above 0.5 bar to prevent cavitation
+
+STEP 6: Verify normal operating conditions:
+  a) Discharge Pressure: 5.0 to 6.5 bar ✓
+  b) Flow Rate: 100 to 130 m3/h ✓
+  c) Bearing Temperature (T-501): Below 70 degrees C ✓
+  d) Vibration Level (VS-701): Below 4.5 mm/s ✓
+  e) Motor Current (M-201): 75 to 85 A ✓
+
+STEP 7: Notify Control Room that Pump P-101 is in normal operation.
+
+5. NORMAL OPERATION MONITORING
+---------------------------------
+During normal operation, operators must check Pump P-101 system every 2 hours:
+
+5.1 Parameters to Monitor:
+  - Temperature sensor T-501 reading (Normal: 50-70 degrees C)
+  - Vibration sensor VS-701 reading (Normal: < 4.5 mm/s)
+  - Pump P-101 flow rate (Normal: 100-130 m3/h)
+  - Discharge pressure (Normal: 5.0-6.5 bar)
+  - Motor M-201 current (Normal: 75-85 A)
+  - Motor M-201 temperature (Normal: < 85 degrees C)
+  - Mechanical seal condition - no visible leakage
+
+5.2 Alarm Response:
+  HIGH TEMPERATURE ALARM (T-501 > 80 degrees C):
+  - Check bearing lubrication
+  - Increase monitoring frequency
+  - Notify Maintenance Department
+  - If temperature continues to rise, prepare for shutdown
+
+  HIGH VIBRATION ALARM (VS-701 > 7.1 mm/s):
+  - Check for unusual noises
+  - Check coupling condition
+  - Notify Maintenance Department immediately
+  - Prepare for emergency shutdown if vibration increases
+
+  LOW FLOW ALARM:
+  - Check Valve V-301 position
+  - Check suction strainer for blockage
+  - Check suction pressure
+
+6. NORMAL SHUTDOWN PROCEDURE
+-------------------------------
+STEP 1: Notify Control Room that Pump P-101 shutdown is in progress.
+
+STEP 2: Slowly close Valve V-301 to reduce flow:
+  a) Gradually close V-301 from operating position to 0% over 60 seconds
+  b) This prevents water hammer in the process line
+
+STEP 3: Stop Motor M-201:
+  a) Stop Motor M-201 from local panel or DCS
+  b) Pump P-101 should coast to stop within 30 seconds
+  c) Verify vibration sensor VS-701 drops to zero
+
+STEP 4: Post-shutdown checks:
+  a) Check that Pump P-101 has stopped completely
+  b) Verify no fluid leakage from mechanical seal
+  c) Record shutdown time and equipment readings in log book
+
+STEP 5: Notify Control Room that shutdown is complete.
+
+7. EMERGENCY SHUTDOWN PROCEDURE
+----------------------------------
+In case of emergency (major leak, fire, high temperature trip, high vibration trip):
+
+STEP 1: Press the EMERGENCY STOP button on Motor M-201 local panel.
+
+STEP 2: Immediately close Valve V-301 manually (close isolation valve if necessary).
+
+STEP 3: Evacuate the area if there is a major fluid release or fire.
+
+STEP 4: Activate plant emergency alarm system.
+
+STEP 5: Contact Control Room and Safety Department immediately.
+
+STEP 6: Do NOT restart Pump P-101 until the cause of the emergency is identified 
+        and corrective action has been taken by the Maintenance Team.
+
+8. POST-MAINTENANCE STARTUP
+-----------------------------
+After any maintenance work on Pump P-101 or Motor M-201:
+
+1. Verify LOTO has been properly removed following SOP-LOTO-001
+2. Verify all maintenance work is complete and documented
+3. Check that all tools and materials have been removed from the area
+4. Ensure Bearing B-401 has been properly lubricated
+5. Verify coupling alignment has been checked after reinstallation
+6. Complete all pre-startup checks listed in Section 3
+7. Perform startup as per Section 4
+
+9. RECORD KEEPING
+------------------
+The following records must be maintained for Pump P-101:
+- Equipment log book: Record all readings every 2 hours during operation
+- Maintenance records: Document all maintenance activities
+- Alarm history: Record all alarms and responses
+- Operating hours: Track total operating hours for maintenance planning
+
+Records must be retained for minimum 3 years.
+
+10. RELATED DOCUMENTS
+-----------------------
+- SOP-LOTO-001: Lockout Tagout Procedure
+- TECH-MANUAL-2024-001: Pump P-101 Technical Manual
+- MR-2024-001: Maintenance Report for Pump P-101 and Motor M-201
+- ERP-PUMP-001: Emergency Response Procedure for Pump System
+- PM-SCHED-001: Preventive Maintenance Schedule
+
+================================================================================
+DOCUMENT APPROVAL
+================================================================================
+Prepared by: James Wilson, Operations Engineer
+Reviewed by: Maria Garcia, Safety Officer
+Approved by: David Chen, Plant Manager
+
+Revision History:
+  Rev 1.0 - Initial issue (March 2022)
+  Rev 2.0 - Added emergency shutdown procedure (August 2023)
+  Rev 2.1 - Updated alarm setpoints, added bearing lubrication check (Feb 2024)
+
+================================================================================
+END OF SOP-PUMP-001
+================================================================================

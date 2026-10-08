@@ -1,0 +1,233 @@
+EQUIPMENT TECHNICAL MANUAL
+Document: TECH-MANUAL-2024-001
+Equipment: Centrifugal Pump System P-101 / Motor M-201
+Revision: 3.0
+Date: March 2024
+
+================================================================================
+CENTRIFUGAL PUMP SYSTEM - TECHNICAL AND OPERATIONS MANUAL
+================================================================================
+
+SECTION 1: SYSTEM OVERVIEW
+----------------------------
+The Pump P-101 is a horizontal centrifugal pump designed for continuous process 
+fluid transfer in the North Processing Facility. The pump is driven by Motor M-201, 
+a 45 kW induction motor, through a flexible coupling.
+
+System Components:
+- Pump P-101: Horizontal centrifugal pump
+- Motor M-201: 45 kW electric induction motor
+- Bearing B-401: Radial rolling element bearing (SKF 6205 series)
+- Mechanical Seal: Single mechanical seal (John Crane Type 1)
+- Coupling: Flexible jaw coupling (Lovejoy L-100)
+- Valve V-301: Discharge control valve
+- Temperature Sensor T-501: PT100 RTD on bearing housing
+- Pressure Gauge PG-601: Suction and discharge pressure gauges
+- Vibration Sensor VS-701: Accelerometer on bearing housing
+
+SECTION 2: TECHNICAL SPECIFICATIONS
+--------------------------------------
+Pump P-101 Technical Data:
+  Type: Horizontal centrifugal pump
+  Capacity: 120 m3/h at design point
+  Head: 45 meters
+  Speed: 1450 RPM
+  Impeller Diameter: 280 mm
+  Shaft Diameter: 45 mm
+  Casing Material: Cast iron (EN-GJL-250)
+  Impeller Material: Stainless steel (316L)
+  Operating Temperature: -10 to 120 degrees C
+  Maximum Pressure: 10 bar
+  NPSH Required: 3.2 m
+
+Motor M-201 Technical Data:
+  Power: 45 kW
+  Voltage: 415 V (3-phase)
+  Current: 85 A (Full Load Current)
+  Speed: 1450 RPM
+  Frequency: 50 Hz
+  Efficiency Class: IE3
+  Insulation Class: F
+  Protection Class: IP55
+  Cooling: TEFC (Totally Enclosed Fan Cooled)
+
+SECTION 3: COMPONENT DESCRIPTIONS
+------------------------------------
+
+3.1 Bearing B-401
+The radial bearing B-401 supports the pump shaft and must withstand both radial 
+and axial loads during operation. The bearing B-401 is a deep groove ball bearing 
+(SKF 6205) with the following specifications:
+  Bore Diameter: 25 mm
+  Outer Diameter: 52 mm
+  Width: 15 mm
+  Dynamic Load Rating: 14.0 kN
+  Static Load Rating: 7.8 kN
+  Maximum Speed: 13000 RPM
+
+The bearing B-401 requires grease lubrication with Mobil SHC 630 or equivalent. 
+Lubrication interval: every 2000 operating hours or 3 months, whichever comes first.
+
+Bearing B-401 is part of Pump P-101 and is located in the bearing housing on 
+the drive end of the pump shaft.
+
+3.2 Mechanical Seal
+The mechanical seal prevents process fluid leakage along the pump shaft. The seal 
+is a John Crane Type 1 single mechanical seal. The seal is used in Pump P-101 to 
+seal the pump casing.
+
+Seal face material: Carbon vs Silicon Carbide
+O-ring material: EPDM (for water service) or Viton (for chemical service)
+
+3.3 Temperature Sensor T-501
+The temperature sensor T-501 is a PT100 RTD (Resistance Temperature Detector) 
+installed on the bearing housing of Pump P-101. The sensor T-501 measures the 
+bearing temperature to detect overheating conditions.
+
+The temperature sensor T-501 is connected to the plant DCS (Distributed Control 
+System) and generates:
+  - High Temperature Alarm: 80 degrees C
+  - High High Temperature Trip: 95 degrees C
+
+The sensor T-501 measures bearing temperature during continuous operation.
+
+3.4 Vibration Sensor VS-701
+The vibration sensor VS-701 is an accelerometer installed on the bearing housing 
+of Pump P-101. The sensor VS-701 measures vibration levels to detect mechanical 
+problems such as bearing failure, misalignment, or imbalance.
+
+Vibration Alarm Level: 7.1 mm/s RMS
+Vibration Trip Level: 11.2 mm/s RMS
+
+SECTION 4: INSTALLATION REQUIREMENTS
+---------------------------------------
+Pump P-101 must be installed on a concrete foundation with adequate mass to 
+minimize vibration. The foundation must be level within 0.1 mm per meter.
+
+Motor M-201 and Pump P-101 must be aligned within the following tolerances:
+  Angular misalignment: Maximum 0.05 degrees
+  Parallel offset: Maximum 0.05 mm
+
+The coupling between Motor M-201 and Pump P-101 must be properly aligned to 
+prevent excessive vibration and bearing wear.
+
+SECTION 5: NORMAL OPERATING PARAMETERS
+-----------------------------------------
+Pump P-101 Normal Operating Conditions:
+  Suction Pressure: 0.5 to 2.0 bar
+  Discharge Pressure: 5.0 to 6.5 bar
+  Flow Rate: 100 to 130 m3/h
+  Bearing Temperature (T-501): 50 to 70 degrees C
+  Vibration (VS-701): Less than 4.5 mm/s RMS
+  Motor Current (M-201): 75 to 85 A
+
+SECTION 6: FAULT CONDITIONS AND TROUBLESHOOTING
+-------------------------------------------------
+
+6.1 Excessive Vibration
+FAULT: Pump P-101 excessive vibration (VS-701 reading > 7.1 mm/s)
+POSSIBLE CAUSES:
+  - Bearing failure (bearing B-401 worn or damaged)
+  - Coupling misalignment between Motor M-201 and Pump P-101
+  - Impeller damage or imbalance
+  - Cavitation in the pump
+  - Foundation looseness
+
+CORRECTIVE ACTION:
+  1. Check vibration spectrum to identify dominant frequency
+  2. Check bearing condition - replace bearing B-401 if worn
+  3. Check and correct coupling alignment
+  4. Check impeller for damage or erosion
+  5. Check suction conditions to prevent cavitation
+
+6.2 High Bearing Temperature
+FAULT: Temperature sensor T-501 reading > 80 degrees C
+POSSIBLE CAUSES:
+  - Insufficient lubrication
+  - Bearing B-401 failure
+  - Excessive load
+  - Cooling air restriction on Motor M-201
+
+CORRECTIVE ACTION:
+  1. Check lubrication level and quality
+  2. Inspect bearing B-401 for damage
+  3. Check motor cooling fan is clear
+
+6.3 Reduced Flow Rate
+FAULT: Flow rate below design value (< 100 m3/h)
+POSSIBLE CAUSES:
+  - Worn or damaged impeller
+  - Partially closed Valve V-301
+  - Pump P-101 suction line blocked
+  - Air in suction line
+
+CORRECTIVE ACTION:
+  1. Check Valve V-301 position
+  2. Check suction strainer for blockage
+  3. Inspect impeller for wear or damage
+
+SECTION 7: MAINTENANCE SCHEDULE
+----------------------------------
+Daily Checks:
+  - Check vibration sensor VS-701 reading
+  - Check temperature sensor T-501 reading
+  - Check pump P-101 for unusual noises
+  - Check motor M-201 temperature
+  - Check for fluid leaks around mechanical seal
+
+Monthly Maintenance:
+  - Lubricate bearing B-401 with Mobil SHC 630 grease
+  - Check coupling condition
+  - Check mechanical seal for leakage
+
+Quarterly Maintenance:
+  - Complete inspection of Pump P-101 and Motor M-201
+  - Alignment check between motor and pump
+  - Bearing B-401 inspection - replace if necessary
+  - Impeller inspection
+  - Valve V-301 inspection and calibration
+
+Annual Maintenance:
+  - Complete overhaul of Pump P-101
+  - Motor M-201 insulation resistance testing
+  - Replacement of mechanical seal as preventive measure
+  - Bearing B-401 replacement as preventive measure
+
+SECTION 8: SPARE PARTS LIST
+-------------------------------
+Critical Spare Parts for Pump P-101 System:
+  - SKF 6205 Bearing (Bearing B-401) - Minimum stock: 2 units
+  - John Crane Type 1 Mechanical Seal kit - Minimum stock: 1 set
+  - Lovejoy L-100 coupling insert - Minimum stock: 1 unit
+  - PT100 Temperature Sensor (T-501 replacement) - Minimum stock: 1 unit
+  - Pump P-101 impeller (316L SS) - Minimum stock: 1 unit
+  - Valve V-301 packing set - Minimum stock: 2 sets
+  - Actuator diaphragm kit for V-301 - Minimum stock: 1 set
+  - Motor M-201 bearings set - Minimum stock: 1 set
+
+SECTION 9: SAFETY INFORMATION
+--------------------------------
+WARNING: Before performing any maintenance on Pump P-101 or Motor M-201, 
+implement Lockout Tagout (LOTO) procedure as per SOP-LOTO-001.
+
+CAUTION: Pump P-101 may contain hot and pressurized process fluid. Always 
+depressurize and cool the system before opening.
+
+PPE Requirements:
+  - Safety helmet
+  - Safety goggles
+  - Chemical resistant gloves
+  - Safety boots with steel toe cap
+  - Hearing protection (noise level > 85 dB in pump area)
+
+Emergency Procedure:
+  In case of major seal failure or catastrophic pump failure:
+  1. Immediately close Valve V-301 (discharge isolation valve)
+  2. Stop Motor M-201 using emergency stop button
+  3. Evacuate the area
+  4. Contact Plant Control Room and Safety Department
+  5. Follow emergency response procedure ERP-PUMP-001
+
+================================================================================
+END OF TECHNICAL MANUAL
+================================================================================

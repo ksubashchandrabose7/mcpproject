@@ -1,0 +1,53 @@
+# ── Web Framework ──────────────────────────────────────────────────────────────
+fastapi==0.111.0
+uvicorn[standard]==0.29.0
+python-multipart==0.0.9
+
+# ── Data Validation ────────────────────────────────────────────────────────────
+pydantic==2.7.1
+pydantic-settings==2.2.1
+email-validator==2.1.1
+
+# ── Database ───────────────────────────────────────────────────────────────────
+sqlalchemy==2.0.30
+pymysql==1.1.0
+cryptography==42.0.8
+
+# ── Authentication ─────────────────────────────────────────────────────────────
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+
+# ── AI / LLM ───────────────────────────────────────────────────────────────────
+langchain==0.2.6
+langchain-google-genai==1.0.6
+google-generativeai
+langchain-groq==0.1.5
+
+# ── Embeddings ─────────────────────────────────────────────────────────────────
+sentence-transformers==3.0.1
+
+# ── NLP ────────────────────────────────────────────────────────────────────────
+# spacy is optional; install separately: pip install spacy && python -m spacy download en_core_web_sm
+
+# ── Document Extraction ────────────────────────────────────────────────────────
+PyMuPDF==1.24.4
+PyPDF2==3.0.1
+python-docx==1.1.2
+pandas==2.2.2
+openpyxl==3.1.3
+
+# ── Scientific / ML ────────────────────────────────────────────────────────────
+numpy==1.26.4
+scikit-learn==1.5.0
+
+# ── Utilities ──────────────────────────────────────────────────────────────────
+python-dotenv==1.0.1
+aiofiles==23.2.1
+httpx==0.27.0
+networkx==3.3
+bcrypt==4.1.3
+
+# ── Testing ────────────────────────────────────────────────────────────────────
+pytest==8.2.2
+pytest-asyncio==0.23.7
+httpx==0.27.0

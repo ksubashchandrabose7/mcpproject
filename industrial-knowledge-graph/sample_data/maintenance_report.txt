@@ -1,0 +1,186 @@
+MAINTENANCE REPORT
+Document ID: MR-2024-001
+Date: January 15, 2024
+Prepared by: Senior Technician John Smith
+Plant: North Processing Facility
+
+================================================================================
+EQUIPMENT INSPECTION AND MAINTENANCE REPORT
+================================================================================
+
+1. EXECUTIVE SUMMARY
+--------------------
+This maintenance report documents the inspection, fault identification, and 
+corrective maintenance activities performed on critical equipment at the North 
+Processing Facility during the scheduled quarterly maintenance shutdown.
+
+2. EQUIPMENT UNDER INSPECTION
+------------------------------
+
+2.1 Pump P-101 - Centrifugal Process Pump
+Equipment ID: P-101
+Location: Pump Station A, North Plant
+Type: Centrifugal Pump
+Serial Number: CP-2019-4521
+Last Maintenance: October 10, 2023
+
+FINDINGS:
+Pump P-101 developed excessive vibration during normal operation. The vibration 
+levels measured 12.5 mm/s RMS, exceeding the alarm threshold of 7.1 mm/s.
+Inspection revealed that the bearing failure was the root cause of the excessive 
+vibration. The radial bearing B-401 showed significant wear and had developed 
+cracks due to lack of lubrication.
+
+The pump P-101 is driven by Motor M-201 through a flexible coupling. The 
+coupling alignment was found to be misaligned by 0.3 mm, which also contributed 
+to the bearing failure.
+
+Pump P-101 has a Temperature Sensor T-501 installed on the bearing housing. 
+The temperature sensor T-501 recorded temperatures of 95 degrees C, well above 
+the normal operating range of 60 to 70 degrees C.
+
+MAINTENANCE ACTIONS PERFORMED:
+- Bearing B-401 replacement with new SKF 6205 bearing
+- Coupling realignment to within 0.05 mm tolerance
+- Lubrication of all bearing housings with Mobil SHC 630 grease
+- Mechanical seal replacement on Pump P-101
+- Impeller inspection - minor erosion noted, within acceptable limits
+
+SPARE PARTS USED:
+- SKF 6205 radial bearing (2 units)
+- Mechanical seal kit (1 set)
+- Coupling insert (1 unit)
+
+STATUS: Pump P-101 returned to service after maintenance. Vibration levels 
+reduced to 2.3 mm/s RMS. Temperature readings normalized to 62 degrees C.
+
+================================================================================
+
+2.2 Motor M-201 - Electric Drive Motor
+Equipment ID: M-201
+Location: Pump Station A, North Plant
+Type: Induction Motor, 45 kW, 1450 RPM, 415V
+Serial Number: EM-2018-7823
+
+FINDINGS:
+Motor M-201 drives Pump P-101 and was inspected as part of the pump maintenance 
+activity. The motor winding insulation resistance tested at 85 MOhm, within 
+acceptable limits. The motor bearings were lubricated and checked for excessive 
+wear.
+
+Motor M-201 rotor showed no signs of damage. The stator winding temperature was 
+recorded at 75 degrees C during normal operation, within design limits.
+
+The motor cooling fan was cleaned of dust accumulation which had been causing 
+overheating risk.
+
+MAINTENANCE ACTIONS PERFORMED:
+- Motor bearing lubrication
+- Cooling fan cleaning
+- Terminal connection tightening
+- Insulation resistance testing
+
+STATUS: Motor M-201 is in good condition and returned to normal operation.
+
+================================================================================
+
+2.3 Valve V-301 - Control Valve
+Equipment ID: V-301
+Location: Discharge Line, Pump Station A
+Type: Globe Control Valve, DN150, Class 300
+Actuator: Pneumatic Actuator
+
+FINDINGS:
+Valve V-301 showed internal leakage due to seat erosion. The valve was 
+disassembled for inspection. The valve seat showed erosion damage caused by 
+cavitation in the process line. The valve plug also showed signs of erosion.
+
+The actuator diaphragm of Valve V-301 was found to be damaged, causing 
+inconsistent valve positioning.
+
+MAINTENANCE ACTIONS PERFORMED:
+- Valve seat lapping and reconditioning
+- Valve plug replacement
+- Actuator diaphragm replacement
+- Valve packing replacement
+- Calibration and positioner adjustment
+
+SPARE PARTS USED:
+- Valve plug assembly (1 unit)
+- Actuator diaphragm kit (1 set)
+- Packing set (1 set)
+
+STATUS: Valve V-301 returned to service with improved performance. Internal 
+leakage reduced to within acceptable limits.
+
+================================================================================
+
+3. SAFETY PROCEDURES FOLLOWED
+-------------------------------
+All maintenance activities were performed following the plant Safety Operating 
+Procedure SOP-MAINT-001. 
+
+Before any maintenance work:
+- Lockout Tagout (LOTO) procedure was implemented on all equipment
+- Safety permits were obtained from the safety department
+- Personal Protective Equipment (PPE) including safety goggles, gloves, and 
+  hearing protection was used by all maintenance personnel
+- Hazard identification and risk assessment was completed
+
+The maintenance team followed the standard safety procedure for confined space 
+entry and energy isolation.
+
+================================================================================
+
+4. PREVENTIVE MAINTENANCE RECOMMENDATIONS
+------------------------------------------
+Based on this inspection, the following preventive maintenance activities are 
+recommended:
+
+1. Pump P-101: Increase lubrication frequency from quarterly to monthly for 
+   bearing B-401. Install vibration monitoring system for continuous monitoring.
+
+2. Motor M-201: Schedule annual insulation resistance testing. Clean cooling 
+   fan every 6 months to prevent overheating.
+
+3. Valve V-301: Investigate cavitation in the process line upstream of the 
+   valve. Consider installing a cavitation-resistant trim.
+
+4. Install online vibration sensor on Pump P-101 bearing housing for 
+   predictive maintenance.
+
+================================================================================
+
+5. MEASUREMENTS AND DATA
+--------------------------
+Pump P-101 - Before Maintenance:
+  Vibration (Bearing Housing): 12.5 mm/s RMS (ALARM: >7.1 mm/s)
+  Bearing Temperature (T-501): 95 degrees C (HIGH: >80 degrees C)
+  Discharge Pressure: 4.2 bar
+  Flow Rate: 85 m3/h (Design: 120 m3/h - reduced due to bearing condition)
+
+Pump P-101 - After Maintenance:
+  Vibration (Bearing Housing): 2.3 mm/s RMS (NORMAL: <7.1 mm/s)
+  Bearing Temperature (T-501): 62 degrees C (NORMAL: 60-70 degrees C)
+  Discharge Pressure: 5.8 bar
+  Flow Rate: 118 m3/h (within design limits)
+
+Motor M-201:
+  Insulation Resistance: 85 MOhm (ACCEPTABLE: >10 MOhm)
+  Operating Temperature: 75 degrees C (DESIGN: <85 degrees C)
+  Current Draw: 82 A (Design: 85 A FLC)
+
+================================================================================
+
+6. CONCLUSION
+--------------
+The quarterly maintenance activities have been successfully completed. All 
+equipment has been returned to normal operation. The identified root causes 
+(bearing failure, misalignment, lubrication deficiency) have been addressed.
+
+Prepared by: John Smith, Senior Technician
+Reviewed by: Robert Johnson, Maintenance Engineer
+Approved by: Sarah Williams, Plant Maintenance Supervisor
+
+Date: January 15, 2024
+================================================================================

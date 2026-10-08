@@ -1,0 +1,34 @@
+# Dependencies
+**/node_modules/
+**/venv/
+**/env/
+**/.env
+**/.venv/
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Build/Release
+**/dist/
+**/build/
+**/out/
+*.egg-info/
+
+# Uploads and Database
+**/uploads/
+*.db
+*.sqlite3
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary & Log files
+*.log
